@@ -1,0 +1,24 @@
+/* Selector universal */
+* {
+    color:red;
+}
+
+
+/* Selector por etiquetas */
+h5 {
+    color:goldenrod;
+}
+
+
+/* Selector por ID */
+#unTituloH3 {
+    font-size: 45px;
+}
+
+/* Selector por Clase */
+.letraAzul {
+    color:blue;
+}
+.fondoNegro {
+    background-color:black;
+}

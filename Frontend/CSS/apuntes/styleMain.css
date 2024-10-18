@@ -1,0 +1,59 @@
+/* Hover en un div */
+.fondoRojo{
+    background-color: red;
+}
+.letraBlanca{
+    color: white;
+}
+.divCuadrado{
+    height: 150px;
+    width: 150px;
+}
+
+div.divCuadrado.fondoRojo.letraBlanca:hover{
+    background-color: brown;
+}
+
+
+/* Hijo de un article */
+article h3 {
+    color: lightgreen;
+}
+
+
+/* Hijo de una clase */
+.contenedor-article h3 {
+    color: lightgreen;
+}
+
+
+/* Hijo directo de una Section */
+section > p {
+    color: red;
+}
+
+h2, h1 {
+    color:blue;
+}
+
+
+/* Elementos con atributo href definido */
+[href] {
+    color:blueviolet;
+}
+
+
+/* Pseudoclase, primer elemento l1 del primer ul encontrado */
+ul:first-child > li:first-child {
+    color:crimson;
+}
+
+
+/* Elementos impares */
+ul > li:nth-child(2n+1) {
+    color:yellowgreen;
+}
+
+footer > ul > li:last-child {
+    background-color:lightgray;
+}

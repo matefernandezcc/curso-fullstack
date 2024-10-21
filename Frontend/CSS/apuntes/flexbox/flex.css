@@ -1,0 +1,71 @@
+/* Cuadrados */
+.divCuadrado {
+    width: 250px;
+    height: 250px;
+}
+.letraBlanca {
+    color: white;
+}
+.fondoRojo {
+    background-color: red;
+}
+
+.fondoAzul {
+    background-color: blue;
+}
+.fondoVerde {
+    background-color: green;
+}
+.fondoNaranja {
+    background-color: orange;
+}
+
+
+/* Flexbox */
+.contenedorFlexible1{
+    height: 500px;
+    border: 15px black solid;
+    display: flex;
+    flex-direction: row; /* Valor por defecto, eje x con orientacion -> */
+
+    flex-wrap: nowrap; /* Valor por defecto, no permite el desbordamiento */
+    flex-wrap: wrap; /* Al haber desbordamiento manda al elemento para abajo */
+    flex-wrap: wrap-reverse; /* El ultimo elemento desborda hacia arriba */
+    flex-flow: row wrap-reverse; /* Dos propiedades en una sola */
+
+    justify-content: space-evenly; /* Alineaciones segun el eje principal */
+    align-items: center; /* Alineaciones sobre el eje secundario */
+}
+
+.contenido1 {
+    align-self: flex-end;
+    order: 2;
+}
+
+.contenedorFlexible2{
+    border: 15px blue solid;
+    display: flex;
+    flex-direction: column; /* Eje y, orientacion positiva */
+    gap: 50px; /* Separacion entre elementos dentro de un flex */
+    column-gap: 25px;
+    row-gap: 75px;
+}
+
+.contenedorFlexible3{
+    border: 15px pink solid;
+    display: flex;
+    flex-direction: row-reverse; /* Eje x, orientacion <- */
+}
+
+.contenedorFlexible4{
+    border: 15px red solid;
+    display: flex;
+    flex-direction: column-reverse; /* Eje y, orientacion negativa */
+}
+
+/* Contenedor de contenedores flex */
+.contenedorFlexible{
+    border: 15px green solid;
+    display: flex;
+    flex-direction: column;
+}

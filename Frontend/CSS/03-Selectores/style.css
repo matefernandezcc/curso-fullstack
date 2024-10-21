@@ -1,13 +1,14 @@
-.menuPrincipal {
+#menuPrincipal {
   list-style: none;
   color : red;
 }
 
-main > ul and main > ol {
+main ul, main ol {
   color: white;
   background-color: blue;
 }
 
+/* Se aplica este selector por ser más específico que el generico para todos los h2 */
 .main-section-h2 {
   font-size: 38px;
 }

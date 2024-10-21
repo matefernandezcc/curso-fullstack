@@ -1,0 +1,64 @@
+/* Pseudoelementos */
+.contenedor-texto::first-letter {
+    color:blue;
+    font-weight: bold;
+    font-size: 45px;
+}
+
+
+/* Divs cuadrados y Hovers*/
+.divCuadrado {
+    width: 250px;
+    height: 250px;
+}
+.divCuadrado:hover::before {
+    content: "=> ";
+}
+.divCuadrado:hover::after {
+    content: " Esto es un texto agregado con CSS!";
+}
+
+.letraBlanca {
+    color: white;
+}
+
+.fondoRojo {
+    background-color: red;
+}
+
+.fondoAzul {
+    background-color: blue;
+    position: static; /* Valor por defecto de todos los elementos */
+    position: relative; /* Relativo a la posicion static */
+    position: absolute; /* Si defino posiciones es relativo al padre, si no no ocupa espacio*/
+    position: fixed; /* Se queda fixed en la pantalla por mas que scrollee */
+    position: sticky; /* Relative hasta que lo pasas con el scroll, ahi se pega a la pantalla */
+    top: 25px;
+    left: 25px;
+}
+/* Defino esto para ver bien el comportamiento de position sticky */ 
+body {
+    height: 2000px;
+    width: 2000px;
+}
+
+.fondoVerde {
+    background-color: green;
+}
+
+.fondoNaranja {
+    background-color: orange;
+}
+
+
+/* Modelo de Caja */
+.modeloCaja {
+    border: 1px, solid, yellow;
+    border-color: black;
+    padding: 50px; /* Unico valor en unidad de medida */
+    padding: 25px 75px; /* el primer valor es y el segundo x */
+    padding: 50px 150px 300px 400px; /* +y +x -y -x empieza arriba y recorre clockwise*/ 
+    margin: 50px; /* Se aleja n pixeles de los elementos que estan a su lado */ 
+}
+
+

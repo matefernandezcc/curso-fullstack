@@ -1,0 +1,17 @@
+.menuPrincipal {
+  list-style: none;
+  color : red;
+}
+
+main > ul and main > ol {
+  color: white;
+  background-color: blue;
+}
+
+.main-section-h2 {
+  font-size: 38px;
+}
+
+h2 {
+ font-size: 20px;
+}
